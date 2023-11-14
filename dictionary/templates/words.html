@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table class="words_list">
+	<tbody>
+    {% for orig, trans in words %}
+		<tr>
+			<td>{{ orig }}</td>
+			<td>{{ trans }}</td>
+		</tr>
+    {% endfor %}
+	</tbody>
+</table>
+{% endblock %}

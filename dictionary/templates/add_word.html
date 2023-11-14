@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action=''>
+        {% csrf_token %}
+        Original world: <label>
+        <input type="text" name="word_orig">
+    </label><br><br>
+        Translation: <label>
+        <input type="text" name="word_trans">
+    </label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
